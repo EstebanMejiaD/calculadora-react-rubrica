@@ -10,5 +10,6 @@ root.render(
         <h1>MatStars Calculator</h1>
     </div>
     <App />
+    
   </React.StrictMode>
 );

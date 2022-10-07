@@ -1,4 +1,5 @@
 import Display from "./Display";
+
 import PanelDeBotones from "./PanelDeBotones";
 import { Component } from "react";
 import operaciones from "../logic/operaciones";
@@ -16,11 +17,17 @@ class App extends Component {
   
   render() {
      return (
-      
-      <div className="comoponent-app">
-        <Display value={this.state.siguiente || this.state.total || "0"} />
+      <div className="contenedor-padre">
+        <div className="comoponent-app">
+        <Display value1={this.state.total} oper={this.state.operador} value2={this.state.siguiente} />
         <PanelDeBotones clickHandle={this.handleClick} />
+        
       </div>
+      <div>
+        
+      </div>
+      </div>
+      
     );
   }
 }
