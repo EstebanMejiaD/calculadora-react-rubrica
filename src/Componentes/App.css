@@ -1,0 +1,27 @@
+.comoponent-app{
+    border-radius: 25px;
+    background: rgba(255,255,255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255, 0.18);
+
+    width: 390px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    margin: 30px 35%;
+}
+
+@media only screen and (max-width: 650px) {
+    .comoponent-app {
+        margin: 30px 20%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .comoponent-app {
+        margin: 30px 2px;
+    }
+}
+
